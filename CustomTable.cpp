@@ -30,7 +30,7 @@ void CustomTable::mouseMoveEvent(QMouseEvent *event)
         //don't resize the last column
         for(qint32 i = 0; i < startEndList.size() - 1; ++i)
         {
-            if((pos.x() < (startEndList[i].second)) && (pos.x() > (startEndList[i].second - tolerance)))
+            if((pos.x() < (startEndList[i].second + tolerance)) && (pos.x() > (startEndList[i].second - tolerance)))
             {
                 //get the table height
                 qint32 tableHeight(this->rowCount() * this->rowHeight(0));
