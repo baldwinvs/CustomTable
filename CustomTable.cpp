@@ -1,6 +1,7 @@
 #include "CustomTable.h"
 
 #include <QHeaderView>
+#include <QMouseEvent>
 #include <QPoint>
 
 CustomTable::CustomTable(QWidget *parent)

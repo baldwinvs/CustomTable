@@ -19,10 +19,10 @@ public:
 
     virtual ~CustomTable();
 
-private:
-    Q_DISABLE_COPY(CustomTable)
+    /** This class is not copyable or moveable currently.
+     */
+    Q_DISABLE_COPY_MOVE(CustomTable)
 
-public:
     /** Inserts a column into the table at the specified column number
      * and repopulate the list.
      * \param column The column number to insert at.
